@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+*, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+a{
+    text-decoration: none;
+  }
+
+h1{
+  font-size: 3.8rem;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+button{
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown1 {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 1rem;
+    }
+}
+@keyframes MoveUpDown2 {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 1rem;
+    }
+}
+
+
+@keyframes MoveSideWay {
+  0%, 100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -35%;
+  }
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 0); }
+    40% { transform: translate(2px, 0); }
+    60% { transform: translate(-2px, 0); }
+    80% { transform: translate(2px, 0); }
+    100% { transform: translate(0); }
+}
+
+@keyframes flip {
+  0%{
+      transform: rotatey(0deg);
+  } 
+  50%{
+      transform: rotatey(180deg);
+  }
+  100%{
+      transform: rotatey(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+      transform: rotate(360deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
